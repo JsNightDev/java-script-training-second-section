@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+  // algorithm to that returns the string str with the uppercased first character, for instance:
+
+  /* 
+      1. assign a string value to data (variable name)
+      2. create a function to change the Uper case in first letter of string
+      3. the function has do, data first letter change to upper case and add using slice except first letter 
+  */
+
+
+      let data = "john";
+      function ucFirst() {
+        data = data[0].toUpperCase() + data.slice(1);
+      }
+      ucFirst();
+      console.log(data);
+
+
+    </script>
+  </body>
+</html>
+
+ 

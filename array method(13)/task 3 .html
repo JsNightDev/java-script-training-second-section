@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Write a function filterRangeInPlace(arr, a, b) that gets an array arr and removes from it all values 
+        except those that are between a and b. The test is: a ≤ arr[i] ≤ b.The function should only modify the array. 
+        It should not return anything. 
+        */
+
+        function filterRangeInPlace(arr, a, b) {
+            for (i = 0; i < arr.length; i++) {
+                // console.log("for " + arr[i]);
+                if (arr[i] < a || arr[i] > b) {
+                    // console.log("if " + arr[i]);
+                    arr.splice(i, 1);
+                }
+            };
+            console.log(arr.length);
+            return arr;
+        };
+
+
+        let arr = [1, 4, 3, 5, 8, 0, 1];
+        // let arr = [5, 3, 8, 1];
+        filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
+        alert(arr); // [3, 1]
+
+    </script>
+</body>
+
+</html>

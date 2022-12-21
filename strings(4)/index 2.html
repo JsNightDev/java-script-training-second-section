@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- algorithm to  checkSpam(str) that returns true if str contains ‘viagra’ or ‘XXX’, otherwise false.The function must be case-insensitive: -->
+    <!-- 
+        1. create a function  checkSpam() 
+        2. the str has check if 'viagra'  str converted to lowercase and if check contains 'XXX' the str converted 
+            to uppercase , it is used for Case sensitive
+        3. if check , the str contains 'viagra' or 'XXX' ,if any have that returns true other wise false
+    -->
+
+    <script>
+
+        function checkSpam(str){
+
+            if ( str.toLowerCase().includes("viagra") ||  str.toUpperCase().includes("XXX")){
+                return true;
+            }
+
+            else{
+                return false;
+            }
+        }
+
+        alert(checkSpam('buy ViAgRA now'));
+        alert(checkSpam('free xxxxx'));
+        alert(checkSpam("innocent rabbit"));
+
+
+    </script>
+</body>
+</html>

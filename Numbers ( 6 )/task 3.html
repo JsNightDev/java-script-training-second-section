@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // algorithm to which prompts for a number until the visitor enters a valid numeric value.The resulting value must be returned as a number. 
+
+    /*  1.Create a function readNumber  
+        2.create a variabel "data"
+        3.create a do while loop to enter a number and the loop has check user enter a not string value
+        4.when the user enter a not string value exit the loop and check the value is null or empty
+        5.if true , show null .if false, show the user enter number
+    */
+
+    function readnumber(){
+
+        let data;
+
+        do {
+            data = prompt("Enter a number","0");
+            } while ( !isFinite(data) ); 
+
+            if ( data === null || data === '' ){
+                alert( "read :" + null );
+            } 
+            else{
+                alert( "read :" + data )
+            }
+    }
+    readnumber();
+            
+
+    
+
+
+    </script>
+</body>
+</html>
